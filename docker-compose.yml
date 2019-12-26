@@ -1,0 +1,9 @@
+version: '3'
+services:
+  server:
+    image: centos8
+    build: .
+    volumes:
+      - ~/.ssh:/root/.ssh/:ro
+    ports:
+      - "2222:22"
