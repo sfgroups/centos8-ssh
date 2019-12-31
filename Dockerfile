@@ -11,7 +11,7 @@ RUN yum -y install openssh openssh-server openssh-clients && \
 
 ADD start.sh /start.sh
 
-RUN chmod +x /start.sh /tini && echo "root:abcd123" |chpasswd
+RUN chmod +x /start.sh /tini 
 
 ENTRYPOINT ["/tini", "-g", "--"]
 
