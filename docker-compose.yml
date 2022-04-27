@@ -1,7 +1,8 @@
-version: '3'
+version: '3.8'
 services:
   server:
     image: sfgroups/centos8-ssh
+    hostname: centos8-ssh
     build: .
     volumes:
       - ~/.ssh:/root/.ssh/:ro
