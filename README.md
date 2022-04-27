@@ -1,17 +1,20 @@
 A CentOS  Stream 8 container that runs openssh server.
 
 
-<<<<<<< HEAD
+* Install Docker compose
+   https://github.com/docker/compose/releases
+
 * To buld the image
    docker-compose build
+   or
+   docker build -t centos8-ssh .
+
 * To start container
    docker-compose up
+   or
+   docker run --rm --name centos8-ssh -h centos8-ssh centos8-ssh
 
 * connect to the server
 
 ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@localhost -p 2222
-
-=======
-ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@localhost -p 2222
->>>>>>> 5c33ca3add30b01d2429bfa6bbde215a8c1b51da
 
