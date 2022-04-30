@@ -24,3 +24,10 @@
 
 `ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@localhost -p 2222`
 
+
+--
+java command
+`
+javac -d . MemoryLeaksDemo.java 
+java -cp . MemoryLeaksDemo
+`
